@@ -1,0 +1,13 @@
+<div align="center">
+    <h2 class="title margin">Obtener Pokemon Por Nombre</h2>
+    <form [formGroup]="form" (ngSubmit)="buscarPokemon()">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Nombre del Pokemon</mat-label>
+            <input matInput placeholder="Ingrese el nombre del Pokemon" formControlName="pokeID" />
+        </mat-form-field>
+        <button mat-raised-button color="primary" class="margin" type="submit">Buscar</button>
+    </form>
+    <div style="width: fit-content;">
+        <pokemon *ngIf="pokemon" [pokemon]="pokemon"></pokemon>
+    </div>
+</div>

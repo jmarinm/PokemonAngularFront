@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'poke-angular';
+  
+  poke = {"_id":"62ceeb7293e5acf34cddd107","name":"Pikachu","generation":"1","personality":"friendly","type":"Electric","abilities":[],"__v":0};
 }

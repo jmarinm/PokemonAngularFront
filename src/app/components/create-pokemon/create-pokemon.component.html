@@ -1,0 +1,30 @@
+<div align = "center">
+    <h1 class="title" style="margin: 20px;">Nuevo Pokemon!</h1>
+    <form [formGroup]="form" (ngSubmit)="createPokemon()">
+        <div>
+        <mat-form-field appearance="fill" class="margin">
+          <mat-label>Nombre: </mat-label>
+          <input matInput placeholder="Ingrese el id del libro" formControlName="name" />
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="fill" class="margin">
+          <mat-label>Tipo: </mat-label>
+          <input matInput placeholder="Ingrese el id del libro" formControlName="type" />
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="fill" class="margin">
+          <mat-label>Personalidad: </mat-label>
+          <input matInput placeholder="Ingrese el id del libro" formControlName="personality" />
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="fill" class="margin">
+          <mat-label>Generacion: </mat-label>
+          <input matInput placeholder="Ingrese el id del libro" type ="number" formControlName="generation" />
+        </mat-form-field>
+    </div>
+        <button type="submit" mat-raised-button color="primary" class="margin">Enviar</button>
+      </form>
+</div>

@@ -1,0 +1,11 @@
+<div align="center">
+    <button mat-raised-button color="primary" class="margin" (click)="buscarPokemons()">Buscar Todos los Pokemon</button>
+<div *ngIf="pokemons?.length > 0">
+        <mat-grid-list cols="4" rowHeight="1:1">
+          <mat-grid-tile *ngFor="let p of pokemons">
+            <pokemon [pokemon]="p"></pokemon>
+          </mat-grid-tile>
+        </mat-grid-list>
+</div>
+
+</div>
